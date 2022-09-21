@@ -1,0 +1,27 @@
+{
+  "name": "app-services-admin-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "./scripts/autorest_gen_client.sh",
+    "start": "tsc && node dist/app.js",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mongodben/app-services-admin-sdk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mongodben/app-services-admin-sdk/issues"
+  },
+  "homepage": "https://github.com/mongodben/app-services-admin-sdk#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "eslint": "^8.23.1"
+  }
+}
