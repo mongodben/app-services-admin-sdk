@@ -1,5 +1,6 @@
 import * as dotenv from "dotenv";
-
-const setup = () => dotenv.config({ path: ".env.test" });
+const path = __dirname + "/../.env.test";
+console.log(path);
+const setup = () => dotenv.config({ path });
 
 export default setup;

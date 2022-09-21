@@ -3,9 +3,8 @@
     "target": "es5",
     "module": "commonjs",
     "declaration": true,
-    "outDir": "./lib",
-    "strict": true
+    "outDir": "./lib"
   },
-  "include": ["src", "scripts"],
+  "include": ["src"],
   "exclude": ["node_modules", "**/__tests__/*"]
 }
