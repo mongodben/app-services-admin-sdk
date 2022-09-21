@@ -200,7 +200,7 @@ paths:
                   access_token:
                     type: string
       security:
-        - refreshAuth: []
+        - RefreshAuth: []
     delete:
       tags:
         - admin
@@ -3581,6 +3581,7 @@ components:
       required: true
       schema:
         type: string
+      x-ms-parameter-location: "method"
     AssetResourcePathPrefix:
       name: prefix
       in: query
@@ -3590,6 +3591,7 @@ components:
       required: false
       schema:
         type: string
+      x-ms-parameter-location: "method"
     GroupId:
       name: groupId
       description: |-
@@ -3616,6 +3618,7 @@ components:
       required: true
       schema:
         type: string
+      x-ms-parameter-location: "method"
     UsersAfter:
       name: after
       required: false
@@ -3623,6 +3626,7 @@ components:
       in: query
       schema:
         type: string
+      x-ms-parameter-location: "method"
     UsersSort:
       name: sort
       required: false
@@ -3632,6 +3636,7 @@ components:
       in: query
       schema:
         type: string
+      x-ms-parameter-location: "method"
     UsersDesc:
       name: desc
       required: false
@@ -3641,6 +3646,7 @@ components:
       in: query
       schema:
         type: boolean
+      x-ms-parameter-location: "method"
     FunctionId:
       name: functionId
       description: The unique `_id` value of a function.
@@ -3648,6 +3654,7 @@ components:
       required: true
       schema:
         type: string
+      x-ms-parameter-location: "method"
     DatasourceId:
       name: datasourceId
       description: The unique `_id` value of a MongoDB data source.
@@ -3655,6 +3662,7 @@ components:
       required: true
       schema:
         type: string
+      x-ms-parameter-location: "method"
     ServiceId:
       name: serviceId
       description: The unique `_id` value of a service.
@@ -3662,6 +3670,7 @@ components:
       required: true
       schema:
         type: string
+      x-ms-parameter-location: "method"
     SecretId:
       name: secretId
       description: The unique `_id` value of a secret.
@@ -3669,6 +3678,7 @@ components:
       required: true
       schema:
         type: string
+      x-ms-parameter-location: "method"
     CommandName:
       name: commandName
       description: Command name
@@ -3676,6 +3686,7 @@ components:
       required: true
       schema:
         type: string
+      x-ms-parameter-location: "method"
     ValueId:
       name: valueId
       description: The unique `_id` value of a value.
@@ -3683,6 +3694,7 @@ components:
       required: true
       schema:
         type: string
+      x-ms-parameter-location: "method"
     DraftId:
       name: draftId
       description: The unique `_id` value of a draft.
@@ -3690,6 +3702,7 @@ components:
       required: true
       schema:
         type: string
+      x-ms-parameter-location: "method"
     RuleId:
       name: ruleId
       description: The unique `_id` value of a rule.
@@ -3697,6 +3710,7 @@ components:
       required: true
       schema:
         type: string
+      x-ms-parameter-location: "method"
     IncomingWebhookId:
       name: incomingWebhookId
       description: The unique `_id` value of an incoming webhook
@@ -3704,6 +3718,7 @@ components:
       required: true
       schema:
         type: string
+      x-ms-parameter-location: "method"
     Email:
       name: email
       description: Email address
@@ -3711,6 +3726,7 @@ components:
       required: true
       schema:
         type: string
+      x-ms-parameter-location: "method"
     MessageId:
       name: messageId
       description: Message ID
@@ -3718,6 +3734,7 @@ components:
       required: true
       schema:
         type: string
+      x-ms-parameter-location: "method"
     Uid:
       name: uid
       description: UID
@@ -3725,6 +3742,7 @@ components:
       required: true
       schema:
         type: string
+      x-ms-parameter-location: "method"
     ProviderId:
       name: providerId
       description: The unique `_id` value of an authentication provider
@@ -3732,6 +3750,7 @@ components:
       required: true
       schema:
         type: string
+      x-ms-parameter-location: "method"
     ApiKeyId:
       name: apiKeyId
       description: The unique `_id` value of an API key
@@ -3739,6 +3758,7 @@ components:
       required: true
       schema:
         type: string
+      x-ms-parameter-location: "method"
     TriggerId:
       name: triggerId
       description: The unique `_id` value of a trigger.
@@ -3746,6 +3766,7 @@ components:
       required: true
       schema:
         type: string
+      x-ms-parameter-location: "method"
     SchemaId:
       name: schemaId
       description: The unique `_id` value of a schema.
@@ -3753,6 +3774,7 @@ components:
       required: true
       schema:
         type: string
+      x-ms-parameter-location: "method"
     EndpointId:
       name: endpointId
       description: The unique `_id` value of an endpoint
@@ -3760,6 +3782,7 @@ components:
       required: true
       schema:
         type: string
+      x-ms-parameter-location: "method"
     CustomResolverId:
       name: customResolverId
       description: The unique `_id` value of a custom resolver.
@@ -3767,6 +3790,7 @@ components:
       required: true
       schema:
         type: string
+      x-ms-parameter-location: "method"
   schemas:
     ApiKey:
       properties:
@@ -5290,14 +5314,14 @@ components:
         - "condition_else"
       description: A value is not valid when a conditional expression evaluates to `false`.
   securitySchemes:
-    tokenAuth:
+    TokenAuth:
       type: http
       scheme: bearer
       description: |-
         The authorization token provided in the `access_token` field of the
         [POST /auth/providers/{provider}/login](#section/adminLogin)
         and  [POST /auth/session](#section/adminDeleteSession) API endpoints.
-    refreshAuth:
+    RefreshAuth:
       type: http
       scheme: bearer
       description: |-
@@ -5512,4 +5536,5 @@ tags:
     x-displayName: "[Deprecated] Webhooks"
     description: View and manage your application's [webhooks](https://www.mongodb.com/docs/realm/services/configure/service-webhooks/).
 security:
-  - tokenAuth: []
+  - TokenAuth: []
+  - RefreshAuth: []

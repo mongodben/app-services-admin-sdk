@@ -7,7 +7,7 @@
     "build": "./scripts/autorest_gen_client.sh",
     "start": "tsc && node dist/app.js",
     "lint": "eslint . --ext .ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,18 @@
   },
   "homepage": "https://github.com/mongodben/app-services-admin-sdk#readme",
   "devDependencies": {
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/jest": "^29.0.3",
     "@typescript-eslint/eslint-plugin": "^5.38.0",
     "@typescript-eslint/parser": "^5.38.0",
-    "eslint": "^8.23.1"
+    "dotenv": "^16.0.2",
+    "eslint": "^8.23.1",
+    "ts-jest": "^29.0.1",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "@azure/identity": "^3.0.0",
+    "atlas-app-services-admin-sdk": "file:generated/typescript",
+    "axios": "^0.27.2"
   }
 }
