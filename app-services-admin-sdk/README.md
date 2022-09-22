@@ -15,7 +15,7 @@ npm install app-services-admin-sdk
 
 Instantiate an SDK client:
 
-```sh
+```js
 const { PUBLIC_KEY, PRIVATE_KEY, GROUP_ID, APP_ID } = process.env;
 const creds = new AppServicesTokenCredential(PUBLIC_KEY, PRIVATE_KEY);
 const apiClient = new AtlasAppServicesAPI(creds, GROUP_ID, APP_ID);
