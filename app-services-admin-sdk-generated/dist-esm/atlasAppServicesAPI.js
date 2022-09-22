@@ -33,7 +33,7 @@ export class AtlasAppServicesAPI extends coreClient.ServiceClient {
             requestContentType: "application/json; charset=utf-8",
             credential: credentials
         };
-        const packageDetails = `azsdk-js-atlas-app-services-admin-sdk-generated/1.0.0-beta.1`;
+        const packageDetails = `azsdk-js-app-services-admin-sdk-generated/1.0.0-beta.1`;
         const userAgentPrefix = options.userAgentOptions && options.userAgentOptions.userAgentPrefix
             ? `${options.userAgentOptions.userAgentPrefix} ${packageDetails}`
             : `${packageDetails}`;

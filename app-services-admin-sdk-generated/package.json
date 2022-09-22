@@ -1,5 +1,5 @@
 {
-  "name": "atlas-app-services-admin-sdk-generated",
+  "name": "app-services-admin-sdk-generated",
   "sdk-type": "mgmt",
   "author": "Microsoft Corporation",
   "description": "A generated SDK for AtlasAppServicesAPI.",
@@ -15,7 +15,7 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist-esm/index.js",
-  "types": "./types/atlas-app-services-admin-sdk-generated.d.ts",
+  "types": "./types/app-services-admin-sdk-generated.d.ts",
   "devDependencies": {
     "@microsoft/api-extractor": "7.18.11",
     "@rollup/plugin-commonjs": "^21.0.1",

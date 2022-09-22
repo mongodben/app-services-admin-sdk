@@ -6,7 +6,7 @@
   "dtsRollup": {
     "enabled": true,
     "untrimmedFilePath": "",
-    "publicTrimmedFilePath": "./types/atlas-app-services-admin-sdk-generated.d.ts"
+    "publicTrimmedFilePath": "./types/app-services-admin-sdk-generated.d.ts"
   },
   "messages": {
     "tsdocMessageReporting": { "default": { "logLevel": "none" } },
