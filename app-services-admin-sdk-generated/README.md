@@ -94,7 +94,7 @@ with the Admin API. To authenticate a request, include the token in a
 Authorization: Bearer <access_token>
 ```
 
-[Package (NPM)](https://www.npmjs.com/package/atlas-app-services-admin-sdk-generated) |
+[Package (NPM)](https://www.npmjs.com/package/app-services-admin-sdk-generated) |
 [Samples](https://github.com/Azure-Samples/azure-samples-js-management)
 
 ## Getting started
@@ -107,12 +107,12 @@ Authorization: Bearer <access_token>
 See our [support policy](https://github.com/Azure/azure-sdk-for-js/blob/main/SUPPORT.md) for more details.
 
 
-### Install the `atlas-app-services-admin-sdk-generated` package
+### Install the `app-services-admin-sdk-generated` package
 
 Install the Atlas App client library for JavaScript with `npm`:
 
 ```bash
-npm install atlas-app-services-admin-sdk-generated
+npm install app-services-admin-sdk-generated
 ```
 
 
