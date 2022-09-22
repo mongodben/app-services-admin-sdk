@@ -7,6 +7,7 @@ This is **not** an official MongoDB-supported project.
 To work with the project, run the following:
 
 ```sh
+npm install -g autorest
 npm install
 npm run build
 ```

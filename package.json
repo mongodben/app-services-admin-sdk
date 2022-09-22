@@ -2,9 +2,13 @@
   "name": "app-services-admin-sdk",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.js",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
-    "build": "./scripts/autorest_gen_client.sh",
+    "build": "./scripts/autorest_gen_client.sh && tsc",
     "start": "tsc && node dist/app.js",
     "lint": "eslint . --ext .ts",
     "test": "jest"
@@ -13,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/mongodben/app-services-admin-sdk.git"
   },
-  "author": "",
+  "author": "bpmutter",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mongodben/app-services-admin-sdk/issues"
@@ -27,11 +31,11 @@
     "dotenv": "^16.0.2",
     "eslint": "^8.23.1",
     "ts-jest": "^29.0.1",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.1",
+    "app-services-admin-sdk": "^1.0.0"
   },
   "dependencies": {
     "@azure/identity": "^3.0.0",
-    "atlas-app-services-admin-sdk": "file:generated/typescript",
     "axios": "^0.27.2"
   }
 }
